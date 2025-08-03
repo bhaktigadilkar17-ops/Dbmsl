@@ -88,7 +88,7 @@ mysql> SELECT TRUNCATE(123.4567, 2);
 +-----------------------+
 1 row in set (0.002 sec)
 
-mysql> SELECT CONCAT('udayan', '9604');
+mysql> SELECT CONCAT('bhakti', '32');
 +-------------------------+
 | CONCAT('bhakti', '32') |
 +-------------------------+
@@ -96,7 +96,7 @@ mysql> SELECT CONCAT('udayan', '9604');
 +-------------------------+
 1 row in set (0.063 sec)
 
-mysql> SELECT REPEAT('udayan', 2);
+mysql> SELECT REPEAT('bhakti', 3);
 +---------------------+
 | REPEAT('bhakti', 3) |
 +---------------------+
@@ -114,7 +114,7 @@ mysql> SELECT REVERSE('Hello');
 
 mysql> SELECT INSTR('bhakti', 'h');
 +----------------------+
-| INSTR('bhakti', 'd') |
+| INSTR('bhakti', 'h') |
 +----------------------+
 |                    2 |
 +----------------------+
@@ -147,7 +147,7 @@ mysql> SELECT RPAD('udayan', 10, '*');
 +-------------------------+
 1 row in set (0.006 sec)
 
-mysql> SELECT INSERT('udayan', 4, 2, 'XYZ');
+mysql> SELECT INSERT('bhakti', 4, 2, 'XYZ');
 +-------------------------------+
 | INSERT('bhakti', 4, 2, 'XYZ') |
 +-------------------------------+
@@ -155,7 +155,7 @@ mysql> SELECT INSERT('udayan', 4, 2, 'XYZ');
 +-------------------------------+
 1 row in set (0.062 sec)
 
-mysql> SELECT LEFT('udayan', 3);
+mysql> SELECT LEFT('bhakti', 3);
 +-------------------+
 | LEFT('bhakti', 3) |
 +-------------------+
@@ -163,7 +163,7 @@ mysql> SELECT LEFT('udayan', 3);
 +-------------------+
 1 row in set (0.006 sec)
 
-mysql> SELECT RIGHT('udayan', 3);
+mysql> SELECT RIGHT('bhakti', 3);
 +--------------------+
 | RIGHT('bhakti', 3) |
 +--------------------+
@@ -187,11 +187,11 @@ mysql> select sqrt(169);
 +-----------+
 1 row in set (0.058 sec)
 
-mysql> SELECT CONCAT('hello',null,'word');
+mysql> SELECT CONCAT('hello',null,'world');
 +-----------------------------+
 | CONCAT('hello',null,'word') |
 +-----------------------------+
-| NULL                        |
+| hello world                 |
 +-----------------------------+
 1 row in set (0.003 sec)
 
