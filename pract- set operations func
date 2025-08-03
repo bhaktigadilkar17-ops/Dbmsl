@@ -122,17 +122,17 @@ mysql> SELECT INSTR('bhakti', 'h');
 
 mysql> SELECT ELT(2, 'alpha', 'ud', 'omega');
 +------------------------------------+
-| ELT(2, 'alpha', 'ud', 'omega')     |
+| ELT(2, 'alpha', 'bh', 'omega')     |
 +------------------------------------+
-| ud                                 |
+| bh                                |
 +------------------------------------+
 1 row in set (0.063 sec)
 
-mysql> SELECT LPAD('udayan', 10, '*');
+mysql> SELECT LPAD('bhakti', 10, '*');
 +-------------------------+
-| LPAD('udayan', 10, '*') |
+| LPAD('bhakti', 10, '*') |
 +-------------------------+
-| ****udayan              |
+| ****bhakti              |
 +-------------------------+
 1 row in set (0.061 sec)
 
@@ -141,17 +141,17 @@ Query OK, 0 rows affected (0.002 sec)
 
 mysql> SELECT RPAD('udayan', 10, '*');
 +-------------------------+
-| RPAD('udayan', 10, '*') |
+| RPAD('bhakti', 10, '*') |
 +-------------------------+
-| udayan****              |
+| bhakti****              |
 +-------------------------+
 1 row in set (0.006 sec)
 
 mysql> SELECT INSERT('udayan', 4, 2, 'XYZ');
 +-------------------------------+
-| INSERT('udayan', 4, 2, 'XYZ') |
+| INSERT('bhakti', 4, 2, 'XYZ') |
 +-------------------------------+
-| udayXY                        |
+| bhaktiXY                      |
 +-------------------------------+
 1 row in set (0.062 sec)
 
