@@ -90,7 +90,7 @@ mysql> SELECT TRUNCATE(123.4567, 2);
 
 mysql> SELECT CONCAT('bhakti', '32');
 +-------------------------+
-| CONCAT('bhakti', '32') |
+| CONCAT('bhakti', '32')  |
 +-------------------------+
 | bhakti32                |
 +-------------------------+
@@ -120,7 +120,7 @@ mysql> SELECT INSTR('bhakti', 'h');
 +----------------------+
 1 row in set (0.060 sec)
 
-mysql> SELECT ELT(2, 'alpha', 'ud', 'omega');
+mysql> SELECT ELT(2, 'alpha', 'bh', 'omega');
 +------------------------------------+
 | ELT(2, 'alpha', 'bh', 'omega')     |
 +------------------------------------+
@@ -136,10 +136,10 @@ mysql> SELECT LPAD('bhakti', 10, '*');
 +-------------------------+
 1 row in set (0.061 sec)
 
-mysql> -- Result: '****udayan'
+mysql> -- Result: '****bhakti'
 Query OK, 0 rows affected (0.002 sec)
 
-mysql> SELECT RPAD('udayan', 10, '*');
+mysql> SELECT RPAD('bhakti', 10, '*');
 +-------------------------+
 | RPAD('bhakti', 10, '*') |
 +-------------------------+
